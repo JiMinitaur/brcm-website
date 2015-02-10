@@ -99,3 +99,8 @@ table {
 	padding: 1.25em;
 	padding-bottom: 1em;
 }
+
+.navigation ul li {
+	display:inline-block;
+	padding:0em 1em;
+}
