@@ -25,15 +25,12 @@ div.wrapper {
 	border-radius: 25px;
 }
 
-.content {
-	
-}
-
+.content {}
 
 .header {
 	min-width:0em;
+	max-width:100%;
 	line-height: 0em;
-	margin-left:-1.5em;
 }
 
 .header .upper {
@@ -101,7 +98,24 @@ table {
 	padding-bottom: 1em;
 }
 
+.navigation ul {
+	padding:0em;
+}
+
 .navigation ul li {
 	display:inline-block;
 	padding:0em 1em;
+}
+
+.content .nav-section {
+	display:none;
+}
+
+.content .nav-section.active {
+	display:block;
+}
+
+.about {
+	text-align:center;
+	padding:1em;
 }

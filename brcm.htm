@@ -10,6 +10,30 @@
     content="Blue Ridge Mustang, located in the Shenandoah Valley of Virginia specializies in used classic mustang parts. Click to go to our webpage" />
     <link rel='stylesheet' type='text/css' href='css/brcm.css' />
 	
+	<!--lib-->
+	<script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+	<!--/lib-->
+	
+	<script>
+		/* Tie navigation to nav-section */
+		$(function() {
+			$(".navigation ul li a").click(function(event) {
+				
+				event_target = $(event.delegateTarget)
+				
+				var id = event_target.parent().data('nav-section');
+				//alert(id);
+				$(".nav-section").each(function(index, element) {
+					element = $(element)
+					if(element.hasClass(id))
+						element.addClass("active")
+					else
+						element.removeClass("active")
+				});
+			});
+		});
+	</script>
+	
   </head>
   <body>
     <div class='wrapper'>
@@ -30,44 +54,22 @@
 		<div class='info'>
 			<div class='navigation'>
 				<ul>
-					<li>
-					  <a href='mailto:brcm@rica.net'>
-						<p align="center">
-						  <img border="0" width="75" height="35" src="brcm_files/image007.gif" />
-						</p>
-						<p align="center">Email</p>
+					<li data-nav-section='home'>
+					  <a href='#'>
+						  <img src="brcm_files/image007.gif" />
+						<p>Home</p>
 					  </a>
 					</li>
-					<li>
-					  <a href='brcmparts.htm'>
-						<p align="center">
-						  <img border="0" width="75" height="35" src="brcm_files/image007.gif" />
-						</p>
-						<p align="center">Parts Info</p>
+					<li data-nav-section='about'>
+					  <a href='#'>
+						  <img src="brcm_files/image007.gif" />
+						<p>About</p>
 					  </a>
 					</li>
-					<li>
-					  <a href='brcmparts.htm'>
-						<p align="center">
-						  <img border="0" width="75" height="35" src="brcm_files/image007.gif" />
-						</p>
-						<p align="center">Parts Info</p>
-					  </a>
-					</li>
-					<li>
-					  <a href='brcmparts.htm'>
-						<p align="center">
-						  <img border="0" width="75" height="35" src="brcm_files/image007.gif" />
-						</p>
-						<p align="center">Parts Info</p>
-					  </a>
-					</li>
-					<li>
-					  <a href='brcmparts.htm'>
-						<p align="center">
-						  <img border="0" width="75" height="35" src="brcm_files/image007.gif" />
-						</p>
-						<p align="center">Parts Info</p>
+					<li data-nav-section='location'>
+					  <a href='#'>
+						  <img src="brcm_files/image007.gif" />
+						<p>Location</p>
 					  </a>
 					</li>
 				</ul>
@@ -76,19 +78,15 @@
 			<div class='content'>
 				<div class='target'></div>
 			
-				<div class='nav-section blurb'>
+				<div class='nav-section home active'>
 					<p>
 						Conveniently located only 10 miles from Interstates I-64 and I-81 in the Shenandoah Valley of Virginia.
 					</p>
 					<p>
 						Please 
-						<a href='mailto:brcm@rica.net' target='_blank'>e-mail</a>
+						<a href='mailto:brcm@rica.net' target='_blank' style='color:#C9061E'>e-mail</a>
 						or call for parts availability and price quotes for all your mustang needs.
 					</p>
-				</div>
-			
-				<div class='nav-section salvage-yard'>
-					<a href='brcm_files/image008.gif' target='_blank'>
 						<div >
 							<img src='brcm_files/image008.gif' style='width:90%'/>
 							<p style="line-height: 100%; margin-top: 0; margin-bottom: 0" align="center">
@@ -96,6 +94,21 @@
 							</p>
 						</div>
 					</a>
+				</div>
+					
+				<div class='nav-section about' >
+					<p>
+					 As owner and operator of Blue Ridge Classic Mustang for over 20 years I would like to thank all my previous customers and look forward to being of assistance to future customers looking for quality original (OEM) Ford Mustang parts for your restoration project or daily driver.
+					</p>
+					<p>
+					 My interest with the Pony car started right out of high school in 1974 with the first Mustang I ever owned---a Grabber Blue 1970 BOSS 302.
+					</p>
+					<p> 
+					 Never did I think this car would set my future in the way it did... Since then, I have always owned and driven a classic Mustang, and I am grateful to have found a business opportunity that involves my passion with the Great American Pony car. 
+					</p>
+					<p>
+					 - James Van Buren Jr.
+					</p>
 				</div>
 			</div><!--.main-content-->
 			
