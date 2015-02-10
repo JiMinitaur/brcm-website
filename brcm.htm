@@ -11,8 +11,14 @@
 	<style>
 		body {
 			color:#000000;
-			background-image:url(brcm_files/Diamond-plate-01.gif);
 			font-weight: bold;
+			/*
+				background-image:url(brcm_files/Diamond-plate-01.gif);
+			*/
+			background: url(brcm_files/blue-ridge-408014.jpg);
+			background-size:200%;
+			background-repeat:no-repeat;
+			baclground-attachment:fixed;
 		}
 		div.wrapper {
 			text-align: center;
@@ -31,28 +37,19 @@
 		}
 
 		.header .upper {
-			background:#DD6600;
 			padding:.5em
 		}
 
 		.header .upper div {
 			display:inline-block;
-			max-width:50%;
+			max-width:60%;
 			position:relative;
 		}
 
 
-		.header .upper .logo-mustang img {
-			height:8em;width:10em;
-			margin:1em;
-		}
-
 		.logo-brcm {
 			background-color:#111A83;
-		}
-
-		.logo-brcm img {
-			width:100%;
+			width:50em;
 			height:10em;
 		}
 
@@ -60,12 +57,18 @@
 .logo-brcm p{
     position: absolute;
     font-weight: bold;
-    color: rgba(39, 87, 201, 0.9);
+    color: rgba(72, 160, 201, 0.9);
     font-size: 1.1em;
     font-family: sans-serif;
     font-style: italic;
-    width:100%
+    width:100%;
 }
+
+		.logo-brcm .name {
+			font-size:2em;
+			top:-.5em;
+    margin:none;padding:none;
+		}	
 
 .logo-brcm .address {
     top: 3.25em;	
@@ -73,6 +76,14 @@
 
 .logo-brcm .catchphrase {
 	top: 5.5em;
+}
+
+.logo-mustang {
+	background:url(brcm_files/image006.gif);
+	background-repeat: no-repeat;
+	background-position:center center;
+	height:10em;
+	width:10em;
 }
 
 		table {margin:auto;border-width:0; }
@@ -91,22 +102,20 @@
 
                   <div class='header' >
 			<div class='upper'>
-                        <div class='logo-mustang'>
-                          <img width="108" height="95" src="brcm_files/image006.gif" />
-                        </div>
-                        <div class='logo-brcm'>
-                        	<img border="0" src="brcm_files/image004.jpg" />
-				<p class='address'>
-        	                  169 Paine Run Rd. Grottoes, VA 24441
-	                        </p>
-	                        <p class='catchphrase'>
-					Specializing in &#39;64 1/2 to &#39;73 Used Mustang Parts
-				 </p>
+                        	<div class='logo-mustang' ></div>
+                        	<div class='logo-brcm'>
+                        		<p class='name'>Blue Ridge Classic Mustang</p>
+					<p class='address'>
+        	                  	169 Paine Run Rd. Grottoes, VA 24441
+	                        	</p>
+	                        	<p class='catchphrase'>
+						Specializing in &#39;64 1/2 to &#39;73 Used Mustang Parts
+				 	</p>
+				</div>
+				<div class='logo-mustang' /></div>
                         </div>
                        
-                        <div class='logo-mustang'>
-                          <img src="brcm_files/image006.gif" />
-                        </div>
+                        
 					
                    	</div>
                         <div class='phone' >
