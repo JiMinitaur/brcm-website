@@ -89,12 +89,17 @@ a:hover {color:red}
 		z-index: 1;	
 	
     border-radius: 5em;
-    background: url("../brcm_files/image006.gif") no-repeat 1.75em center / 75% auto rgba(128, 128, 128, 0.47);
+    background: url("../brcm_files/image006.gif") no-repeat center center / 75% auto rgba(128, 128, 128, 0);
 }
 
 .logo-mustang.left {
-	left:-12em;
+	left:-10em;
 	transform:scaleX(1)
+}
+
+
+.logo-mustang.right {
+	right:-10em;
 }
 
 .logo-mustang:hover {
@@ -102,9 +107,6 @@ a:hover {color:red}
 }
 
 
-.logo-mustang.right {
-	right:-12em;
-}
 
 .phone {
 	font-size:2em;
