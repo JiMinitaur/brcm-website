@@ -3,7 +3,7 @@
   <head>
     <meta name="generator"
     content="HTML Tidy for HTML5 (experimental) for Windows https://github.com/w3c/tidy-html5/tree/c63cc39" />
-    <title>brcm</title>
+    <title>Blue Ridge Classic Mustang</title>
     <meta name="keywords"
     content="Used Car Parts, Mustang, Classic Mustang, Classic Mustang Parts, Used Mustang Parts, Junk Yard, Part Locator, Parts List, Blue Ridge, Blue Ridge Classic Mustang, Pony Car, Classic Pony, Cars, 1964 1/2, 1973, Restoration," />
     <meta name="Description"
@@ -35,6 +35,21 @@
 		<style>@import url('js/tkahn-Smooth-Div-Scroll-1c3b3a6/css/smoothDivScroll.css');</style>
 	<!--/lib-smooth-div-scroll-->
 	
+	<!--lib-fancybox2-->
+
+		<!-- Add fancyBox -->
+		<link rel="stylesheet" href="js/fancyapps-fancyBox-18d1712/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
+		<script type="text/javascript" src="js/fancyapps-fancyBox-18d1712/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+		<!-- Optionally add helpers - button, thumbnail and/or media -->
+		<link rel="stylesheet" href="js/fancyapps-fancyBox-18d1712/source/helpers/jquery.fancybox-buttons.css?v=1.0.5" type="text/css" media="screen" />
+		<script type="text/javascript" src="js/fancyapps-fancyBox-18d1712/source/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
+		<script type="text/javascript" src="js/fancyapps-fancyBox-18d1712/source/helpers/jquery.fancybox-media.js?v=1.0.6"></script>
+
+		<link rel="stylesheet" href="js/fancyapps-fancyBox-18d1712/source/helpers/jquery.fancybox-thumbs.css?v=1.0.7" type="text/css" media="screen" />
+		<script type="text/javascript" src="js/fancyapps-fancyBox-18d1712/source/jquery.fancybox-thumbs.js?v=1.0.7"></script>
+	<!--/lib-fancybox2-->
+	
 	<script>
 		$(function() {
 			/* Tie navigation to nav-section */
@@ -60,6 +75,7 @@
 			}
 			
 			$(".nav-section").bind("active", active);
+			$(".nav-section").fancyBox();
 		});
 	</script>
 	
@@ -84,23 +100,27 @@
 			<div class='navigation'>
 				<ul>
 					<li data-nav-section='home'>
-						  <img src="brcm_files/image007.gif" />
-						<p>Home</p>
+						  <img src="brcm_files/image007.gif" /><br/>
+						Home
 					</li>
 					<li data-nav-section='about'>
-						  <img src="brcm_files/image007.gif" />
-						<p>About</p>
+						  <img src="brcm_files/image007.gif" /><br/>
+						About
 					</li>
 					<li data-nav-section='gallery'>
-						  <img src="brcm_files/image007.gif" />
-						<p>Gallery</p>
+						  <img src="brcm_files/image007.gif" /><br/>
+						Gallery
+					</li>
+					<li data-nav-section='map'>
+					  <img src="brcm_files/image007.gif" /><br/>
+					  Location
 					</li>
 				</ul>
 			</div>
 			
 
 			
-				<div class='nav-section home active'>
+				<div class='nav-section home'>
 					<p>
 						Conveniently located only 10 miles from Interstates I-64 and I-81 in the Shenandoah Valley of Virginia.
 					</p>
@@ -120,13 +140,13 @@
 					
 				<div class='nav-section about' >
 					<p>
-					 As owner and operator of Blue Ridge Classic Mustang for over 20 years I would like to thank all my previous customers and look forward to being of assistance to future customers looking for quality original (OEM) Ford Mustang parts for your restoration project or daily driver.
-					</p>
-					<p>
-					 My interest with the Pony car started right out of high school in 1974 with the first Mustang I ever owned---a Grabber Blue 1970 BOSS 302.
+					 My interest started right out of high school in 1974 with the first Mustang I ever owned: a Grabber Blue 1970 BOSS 302.
 					</p>
 					<p> 
-					 Never did I think this car would set my future in the way it did... Since then, I have always owned and driven a classic Mustang, and I am grateful to have found a business opportunity that involves my passion with the Great American Pony car. 
+					 Never would I have realized this car would set my future in the way it did... Since then, I have always owned and driven a classic Mustang, and I am grateful to have found a business opportunity that involves my passion with the Great American Pony car. 
+					</p>
+					<p>
+					 As owner and operator of Blue Ridge Classic Mustang for over 20 years I would like to thank all my previous customers and look forward to being of assistance to future customers looking for quality original (OEM) Ford Mustang parts for their restoration project or their daily driver.
 					</p>
 					<p>
 					 - James Van Buren Jr.
@@ -134,12 +154,33 @@
 				</div>
 				
 				<div class='nav-section gallery'>
-						<img src='photos/1970302end.jpg' />
-						<img src='photos/ym2.JPG' />
-						<img src='photos/1968coupered.jpg' />
-						<img src='photos/ym2.JPG' />
-						<img src='photos/ym2.JPG' />
-						<img src='photos/ym2.JPG' />
+					<img src='photos/1970302end.jpg' />
+					<img src='photos/ym2.JPG' />
+					<img src='photos/1968coupered.jpg' />
+					<img src='photos/ym2.JPG' />
+					<img src='photos/ym2.JPG' />
+					<img src='photos/ym2.JPG' />
+				</div>
+				
+				<div class='nav-section map active'>
+					<div class='map-image'>
+					<a href='brcm_files/map-google.png'>
+						<span class='click-text'>(CLICK MAP TO ENLARGE)</span>
+						<img src='brcm_files/map-google.png' />
+					</a>
+					</div>
+					<div class='map-text'>
+					<p>
+						Visitors are welcome, customer appointments appreciated.
+						
+						<p>As a home based business, I have no set hours of operation.  <br/>
+						Please call to make sure I will available to assist you. 
+					</p>
+					<p>
+					Thank you,<br/>
+					James Van Buren Jr.
+					<p>
+					</div>
 				</div>
 				
 			</div><!--.content-->

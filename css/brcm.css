@@ -9,6 +9,8 @@ body {
 	background-image: url(../brcm_files/mountains-sample.jpg);
 	background-size: cover;
 	background-repeat:no-repeat;
+	
+	font-size:.9em;
 }
 
 a:link, a:visited {color:black}
@@ -128,6 +130,7 @@ a:hover {color:red}
 
 .content .nav-section {
 	display:none;
+	padding:0em 2em;
 }
 
 .content .nav-section.active {
@@ -136,18 +139,29 @@ a:hover {color:red}
 
 .about {
 	text-align:center;
-	padding:1em;
 }
 
 .gallery img {
 	position:relative;
 	float:left;
-	height:30em;
+	height:17.5em;
 }
 
 .gallery {
 	position:relative;
-	max-height:30em;
+	max-height:25em;
 	margin:0em;
 	padding:0em;
+}
+
+.map-text {
+	padding-top:1em;
+}
+
+.map-image {float:left; position:relative; height:22em; width:25em;}
+
+.map img {max-height:20em; left:0em;position:absolute;}
+
+.map .click-text {position:absolute; bottom:2em; left:0em;width:23em; z-index:2;
+	background: none repeat scroll 0% 0% rgba(242, 242, 242, 0.4);
 }
