@@ -109,12 +109,9 @@ a:hover {color:red}
 	transform:scaleX(-1);
 }
 
-
-
 .phone {
-	font-size:2em;
+	font-size:1.75em;
 	font-weight:bold;
-	padding: .75em;
 	padding: 1.25em;
 	padding-bottom: 1em;
 }
