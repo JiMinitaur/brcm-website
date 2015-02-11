@@ -14,7 +14,7 @@ body {
 a:link, a:visited {color:black}
 a:hover {color:red}
 
-div.wrapper {
+.wrapper {
 	text-align: center;
 	width:75%;
 	margin:auto;
@@ -86,10 +86,6 @@ div.wrapper {
 	width:10em;
 }
 
-table {
-	margin:auto;border-width:0; 
-}
-
 .phone {
 	font-size:2em;
 	font-weight:bold;
@@ -120,3 +116,15 @@ table {
 	padding:1em;
 }
 
+.gallery img {
+	position:relative;
+	float:left;
+	height:30em;
+}
+
+.gallery {
+	position:relative;
+	max-height:30em;
+	margin:0em;
+	padding:0em;
+}
