@@ -144,11 +144,12 @@ a:hover {color:red}
 .gallery img {
 	position:relative;
 	float:left;
-	height:17.5em;
+	height:25em;
 }
 
 .gallery {
 	position:relative;
+	height:20em;
 	max-height:25em;
 	margin:0em;
 	padding:0em;

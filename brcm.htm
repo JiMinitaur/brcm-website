@@ -75,7 +75,21 @@
 			}
 			
 			$(".nav-section").bind("active", active);
-			$(".nav-section").fancyBox();
+			
+			
+			function processGallery(data,status) {
+				alert(data)
+			}
+			
+			/*
+			alert('request');
+			$.get({
+				url:'gallery/gallery.html'
+			}).done(processGallery);
+			
+			*/
+			
+			//$(".nav-section").fancyBox();
 		});
 	</script>
 	
@@ -109,7 +123,7 @@
 					</li>
 					<li data-nav-section='gallery'>
 						  <img src="brcm_files/image007.gif" /><br/>
-						Gallery
+						Parts Gallery
 					</li>
 					<li data-nav-section='map'>
 					  <img src="brcm_files/image007.gif" /><br/>
@@ -120,7 +134,7 @@
 			
 
 			
-				<div class='nav-section home'>
+				<div class='nav-section home active'>
 					<p>
 						Conveniently located only 10 miles from Interstates I-64 and I-81 in the Shenandoah Valley of Virginia.
 					</p>
@@ -131,7 +145,7 @@
 					</p>
 						<div >
 							<img src='brcm_files/image008.gif' style='width:90%'/>
-							<p style="line-height: 100%; margin-top: 0; margin-bottom: 0" align="center">
+							<p style="display:none;line-height: 100%; margin-top: 0; margin-bottom: 0" align="center">
 							  Click Here to Enlarge Salvage Yard
 							</p>
 						</div>
@@ -154,15 +168,26 @@
 				</div>
 				
 				<div class='nav-section gallery'>
-					<img src='photos/1970302end.jpg' />
-					<img src='photos/ym2.JPG' />
-					<img src='photos/1968coupered.jpg' />
-					<img src='photos/ym2.JPG' />
-					<img src='photos/ym2.JPG' />
-					<img src='photos/ym2.JPG' />
+					<img src='gallery/parts/100_1170.jpg' />
+					<img src='gallery/parts/100_1171.jpg' />
+					<img src='gallery/parts/100_1172.jpg' />
+					<img src='gallery/parts/100_1174.jpg' />
+					<img src='gallery/parts/100_1176.jpg' />
+					<img src='gallery/parts/100_1177.jpg' />
+					<img src='gallery/parts/100_1178.jpg' />
+					<img src='gallery/parts/100_1179.jpg' />
+					<img src='gallery/parts/100_1180.jpg' />
+					<img src='gallery/parts/100_1181.jpg' />
+					<img src='gallery/parts/100_1182.jpg' />
+					<img src='gallery/parts/100_1183.jpg' />
+					<img src='gallery/parts/100_1184.jpg' />
+					<img src='gallery/parts/100_1185.jpg' />
+					<img src='gallery/parts/100_1186.jpg' />
+					<img src='gallery/parts/100_1188.jpg' />
+					<img src='gallery/parts/100_1189.jpg' />
 				</div>
 				
-				<div class='nav-section map active'>
+				<div class='nav-section map'>
 					<div class='map-image'>
 					<a href='brcm_files/map-google.png'>
 						<span class='click-text'>(CLICK MAP TO ENLARGE)</span>
