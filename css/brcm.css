@@ -13,6 +13,7 @@ body {
 
 a:link, a:visited {color:black}
 a:hover {color:red}
+.navigation li:hover {color:red}
 
 .wrapper {
 	text-align: center;
