@@ -141,15 +141,19 @@ a:hover {color:red}
 .gallery img {
 	position:relative;
 	float:left;
-	height:25em;
+	
+	margin:.5em 1em;
+	
+	max-height:10em;
+	max-width:10em;
 }
 
 .gallery {
 	position:relative;
-	height:20em;
-	max-height:25em;
-	margin:0em;
-	padding:0em;
+	height:25.5em;
+	max-height:27em;
+	margin:2em;
+	overflow:scroll;
 }
 
 .map-text {
