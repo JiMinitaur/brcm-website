@@ -134,8 +134,20 @@ a:hover {color:red}
 	display:block;
 }
 
+.home p {
+	margin:0em;
+}
+
+.scrapyard {
+	border-radius:1em;
+}
+
 .about {
 	text-align:center;
+}
+
+.gallery .text {
+	
 }
 
 .gallery img {
@@ -148,12 +160,12 @@ a:hover {color:red}
 	max-width:10em;
 }
 
-.gallery {
+.gallery .fancy {
 	position:relative;
 	height:25.5em;
 	max-height:27em;
-	margin:2em;
-	overflow:scroll;
+	margin:0em 2em;
+	overflow:auto;
 }
 
 .map-text {
