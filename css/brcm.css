@@ -1,14 +1,10 @@
 body {
-	color:#000000;
 	font-weight: bold;
-	/*
-		background-image:url(brcm_files/Diamond-plate-01.gif);
-		background: url(brcm_files/blue-ridge-408014.jpg);
-		background-size:200%;
-	*/
+
 	background-image: url(../brcm_files/mountains-sample.jpg);
 	background-size: cover;
 	background-repeat:no-repeat;
+	background-color: #13218C;
 	
 	font-size:.9em;
 }
