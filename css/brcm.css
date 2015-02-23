@@ -18,7 +18,7 @@ a:hover {color:red}
 	margin:auto;
 	position:relative;
 	padding: 1em 2em;
-	background: none repeat scroll 0% 0% rgba(242, 242, 242, 0.4);
+	background: none repeat scroll 0% 0% rgba(242, 242, 242, 0.2);
 	border: 2px solid gray;
 	border-radius: 25px;
 	
@@ -74,8 +74,9 @@ a:hover {color:red}
 }
 
 .logo-brcm .catchphrase {
-	bottom: 1em;
-	color: #F00;
+    bottom: .5em;
+    color: #F00;
+    font-size: 1.15em;
 }
 
 .logo-mustang {
@@ -146,7 +147,7 @@ a:hover {color:red}
 }
 
 .gallery .text {
-	
+	font-size: 1.1em;
 }
 
 .gallery img {
@@ -182,6 +183,7 @@ a:hover {color:red}
     border-radius: 5px;
     margin: 2em;
 	margin-right:5em;
+	margin-top:0em;
 }
 
 .map img {
