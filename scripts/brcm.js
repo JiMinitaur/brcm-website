@@ -8,11 +8,14 @@ define("brcm.fancy",
 		images.wrap(function(){
 			console.log("fancify: " + this.outerHTML);
 			var anchor = $("<a class='fancy-link'></a>");
+			anchor.attr('rel', 'gallery');
 			var href = $(this).attr('src');
 			anchor = anchor.attr('href', href);
 			return anchor;
 		});
-		$(".fancy-link").attr('rel', 'gallery').fancybox();	
+		
+		$(".home .fancy-link").attr('rel', 'scrapyard');
+		$(".fancy-link").fancybox();	
 	}
 );
 

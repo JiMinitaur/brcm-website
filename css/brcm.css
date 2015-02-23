@@ -51,7 +51,6 @@ a:hover {color:red}
 	border-radius:2em;
 }
 
-
 .logo-brcm p{
 		position: absolute;
 		font-weight: bold;
@@ -93,24 +92,29 @@ a:hover {color:red}
 }
 
 .logo-mustang.left {
+	transition: 1s ease-in-out;
 	left:-10em;
-	transform:scaleX(1)
+	transform:scaleX(-1);
 }
 
 
 .logo-mustang.right {
+	transition: 1s ease-in-out;
 	right:-10em;
 }
 
-.logo-mustang:hover {
-	transform:scaleX(-1);
+.logo-mustang.left:hover {
+    transform:scaleX(1)
+}
+
+.logo-mustang.right:hover {
+    transform:scaleX(-1)
 }
 
 .phone {
 	font-size:1.75em;
 	font-weight:bold;
-	padding: 1.25em;
-	padding-bottom: 1em;
+	padding: .75em;
 }
 
 .navigation ul {
@@ -134,7 +138,12 @@ a:hover {color:red}
 }
 
 .home p {
-	margin:0em;
+	margin:.25em;
+}
+
+.home span {
+	padding:0em .25em;
+	display:inline-block;
 }
 
 .scrapyard {
@@ -203,6 +212,11 @@ a:hover {color:red}
 	background: none repeat scroll 0% 0% rgba(242, 242, 242, 0.4);
 }
 
+.counter img{
+	opacity:1;
+	height:1em;
+	margin-top:.5em;
+}
 
 .disclaimer {
 	clear: both;
