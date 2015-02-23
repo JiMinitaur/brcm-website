@@ -134,7 +134,7 @@ a:hover {color:red}
 }
 
 .home p {
-	margin:0em;
+	margin:.25em;
 }
 
 .scrapyard {
@@ -203,6 +203,11 @@ a:hover {color:red}
 	background: none repeat scroll 0% 0% rgba(242, 242, 242, 0.4);
 }
 
+.counter img{
+	opacity:1;
+	height:1em;
+	margin-top:.5em;
+}
 
 .disclaimer {
 	clear: both;
