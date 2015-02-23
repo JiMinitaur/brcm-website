@@ -52,7 +52,9 @@ define("brcm.lazypic",["jquery", "lazypic"],
 		
 		var count = 0;
 		$("img").each(function(index, element) {
-			imgLoadState(this).queue().done(function() {
+			var state = imgLoadState(this);
+			if (state.checks.isReady())
+				state.queue().done(function() {
 				console.log("image-loaded: " + element.outerHTML);
 			});
 			count++;
