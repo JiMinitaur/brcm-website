@@ -1,11 +1,12 @@
 
 define("brcm.fancy",
-	["jquery", "fancybox"],
+	["jquery", "fancybox", "brcm.lazypic"],
 	function($) {
 		console.log("brcm.fancybox()");
 		
 		var images = $("div.fancy img, img.fancy");
 		images.wrap(function(){
+			console.log("fancify: " + this.outerHTML);
 			var anchor = $("<a class='fancy-link'></a>");
 			var href = $(this).attr('src');
 			anchor = anchor.attr('href', href);
@@ -45,4 +46,21 @@ define("brcm.navigation",
 	}
 );
 
-require([ "brcm.navigation", "brcm.fancy"]);
+define("brcm.lazypic",["jquery", "lazypic"],
+	function($) {
+		console.log("brcm.lazypic()")
+		
+		var count = 0;
+		$("img").each(function(index, element) {
+			imgLoadState(this).queue().done(function() {
+				console.log("image-loaded: " + element.outerHTML);
+			});
+			count++;
+		})
+		
+		for (var i = 0; i < count; i++)
+			imgLoadNext()
+	}
+)
+
+require([ "brcm.navigation", "brcm.fancy", "brcm.lazypic"]);
