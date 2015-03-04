@@ -68,4 +68,19 @@ define("brcm.lazypic",["jquery", "lazypic"],
 	}
 )
 
-require([ "brcm.navigation", "brcm.fancy", "brcm.lazypic"]);
+define("brcm.heightfix", ["jquery"],
+	function($) {
+		
+		$("body").resize( function() {
+			console.log("height-fix");
+			var vHeight = $(window).height();
+			var bHeight = $(document.body).height();
+			if (bHeight < vHeight) {
+				console.log("height -> " + vHeight())
+				$(document.body).height(vHeight);
+			}
+		})
+	}
+)
+
+require([ "brcm.navigation", "brcm.fancy", "brcm.lazypic", "brcm.heightfix"]);
