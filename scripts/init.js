@@ -3,7 +3,8 @@ requirejs.config({
 	"paths": {
 		"jquery": "lib/jquery-2.1.3",
 		"fancybox" : "lib/fancyBox/index",
-		"lazypic"  : "lib/lazypic"
+		"lazypic"  : "lib/lazypic",
+		"jssor"		: "lib/jssor.slider.min",
 	} 
 });
 
