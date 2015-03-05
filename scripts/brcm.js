@@ -26,11 +26,13 @@ define("brcm.navigation",
 		$(".navigation ul li").click(function(event) {
 			event_target = $(event.delegateTarget)
 			var id = event_target.data('nav-section');
-			$(".nav-section").each(function(index, element) {
+			$(".nav-section").slideUp()
+			.each(function(index, element) {
 				element = $(element)
 				if(element.hasClass(id)) {
-					element.addClass("active")
-					element.trigger("active")
+					element
+					.slideDown()
+					.trigger("active")
 				}
 				else
 					element.removeClass("active")
@@ -38,9 +40,13 @@ define("brcm.navigation",
 		});
 	
 		function active(event) {
-			element = $(event.delegateTarget)
+			element = $(event.target)
 			if (element.hasClass("gallery")) {
-					//element.smoothDivScroll({autoScrollingMode: "onStart"})
+				var offset = $('#slider').offset()
+				if (offset) {
+					$(document).scrollTop(offset.top)
+					console.log("scroll("+offset.top+")")
+				}
 			}
 		}
 		
@@ -92,8 +98,8 @@ function() {
 	
 	function ScaleSlider() {
 		var parentWidth = $('#slider').parent().width();
-		if (parentWidth > 200) {
-			slider.$ScaleWidth(parentWidth - 100);
+		if (parentWidth > 400) {
+			slider.$ScaleWidth(parentWidth - 200);
 		}
 		else
 			window.setTimeout(ScaleSlider, 30);
@@ -103,6 +109,7 @@ function() {
 	.bind("load", ScaleSlider)
 	.bind("resize", ScaleSlider)
 	.bind("orientationchange", ScaleSlider)
+	
 })
 
 require([ "brcm.navigation", "brcm.fancy", "brcm.lazypic"]);
