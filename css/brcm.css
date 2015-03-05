@@ -121,8 +121,8 @@ a:hover {color:red}
 
 .owner {
 	font-size:1.1em;
-	padding:.5em;
-	margin-top:-1em;
+	margin-top:-.5em;
+
 }
 
 .appointments {
