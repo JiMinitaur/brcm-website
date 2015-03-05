@@ -68,4 +68,43 @@ define("brcm.lazypic",["jquery", "lazypic"],
 	}
 )
 
+define("brcm.jssor", ["jquery", "jssor.slider"], 
+function() {
+	console.log("brcm.jssor()")
+	
+	var options = { 
+		$AutoPlay : true ,
+		$FillMode : 1,
+		$AutoPlayInterval : 5000,
+		$ArrowNavigatorOptions: {
+			$Class: $JssorArrowNavigator$,              //[Requried] Class to create arrow navigator instance
+			$ChanceToShow: 1,                               //[Required] 0 Never, 1 Mouse Over, 2 Always
+			$AutoCenter: 2,                                 //[Optional] Auto center navigator in parent container, 0 None, 1 Horizontal, 2 Vertical, 3 Both, default value is 0
+			$Steps: 1                                       //[Optional] Steps to go for each navigation request, default value is 1
+		},
+		$SlideshowOptions : {
+			$Class: $JssorSlideshowRunner$,
+			$Transitions: [{$Duration:700,$Opacity:2,$Brother:{$Duration:1000,$Opacity:2}}]
+		}
+	
+	}
+	var slider = new $JssorSlider$('slider', options);
+	
+	function ScaleSlider() {
+		var parentWidth = $('#slider').parent().width();
+		if (parentWidth > 200) {
+			slider.$ScaleWidth(parentWidth - 100);
+		}
+		else
+			window.setTimeout(ScaleSlider, 30);
+	}
+	
+	$(window)
+	.bind("load", ScaleSlider)
+	.bind("resize", ScaleSlider)
+	.bind("orientationchange", ScaleSlider)
+})
+
 require([ "brcm.navigation", "brcm.fancy", "brcm.lazypic"]);
+
+require(["brcm.jssor"])

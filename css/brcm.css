@@ -160,7 +160,7 @@ a:hover {color:red}
 	font-size: 1.1em;
 }
 
-.gallery img {
+.gallery .fancy img {
 	position:relative;	
 	margin: .5em;
 	max-height:12em;
@@ -220,4 +220,17 @@ a:hover {color:red}
 
 .disclaimer {
 	clear: both;
+}
+
+.gallery .text {
+	margin: 1em;
+}
+
+#slider {
+	display:inline-block;
+}
+
+[u=slides] {
+	border-radius:1em;
+	cursor:move;
 }

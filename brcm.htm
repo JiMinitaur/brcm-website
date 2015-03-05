@@ -107,19 +107,56 @@
 				<div class='text'> Shipping available on most parts --
 					Paypal, Money Orders, or Personal Checks accepted.
 				</div>
-				<div class='fancy'>
-					<img data-src='gallery/parts/100_1170-web.jpg' />
-					<img data-src='gallery/parts/100_1171-web.jpg' />
-					<img data-src='gallery/parts/100_1172-web.jpg' />
-					<img data-src='gallery/parts/100_1174-web.jpg' />
-					<img data-src='gallery/parts/100_1178-web.jpg' />
-					<img data-src='gallery/parts/100_1179-web.jpg' />
-					<img data-src='gallery/parts/100_1181-web.jpg' />
-					<img data-src='gallery/parts/100_1182-web.jpg' />
-					<img data-src='gallery/parts/100_1183-web.jpg' />						
-					<img data-src='gallery/parts/100_1184-web.jpg' />		
-					<img data-src='gallery/parts/100_1185-web.jpg' />		
-					<img data-src='gallery/parts/100_1188-web.jpg' />		
+				<div id="slider" style='position:relative;height:900px;width:1600px'>
+					<!-- Slides Container -->
+					<div u="slides" style='overflow:hidden; height:900px;width:1600px;'>
+						<div><img u="image" src2='gallery/parts/100_1170-web.jpg' /></div>
+						<div><img u="image" src2='gallery/parts/100_1171-web.jpg' /></div>
+						<div><img u="image" src2='gallery/parts/100_1172-web.jpg' /></div>
+						<div><img u="image" src2='gallery/parts/100_1174-web.jpg' /></div>
+						<div><img u="image" src2='gallery/parts/100_1178-web.jpg' /></div>
+						<div><img u="image" src2='gallery/parts/100_1179-web.jpg' /></div>
+						<div><img u="image" src2='gallery/parts/100_1181-web.jpg' /></div>
+						<div><img u="image" src2='gallery/parts/100_1182-web.jpg' /></div>
+						<div><img u="image" src2='gallery/parts/100_1183-web.jpg' /></div>
+						<div><img u="image" src2='gallery/parts/100_1184-web.jpg' /></div>
+						<div><img u="image" src2='gallery/parts/100_1185-web.jpg' /></div>
+						<div><img u="image" src2='gallery/parts/100_1188-web.jpg' /></div>
+					</div>
+					
+					 <!-- Arrow Navigator Skin Begin -->
+					<style>
+						/* jssor slider arrow navigator skin 03 css */
+						/*
+						.jssora03l              (normal)
+						.jssora03r              (normal)
+						.jssora03l:hover        (normal mouseover)
+						.jssora03r:hover        (normal mouseover)
+						.jssora03ldn            (mousedown)
+						.jssora03rdn            (mousedown)
+						*/
+						.jssora03l, .jssora03r, .jssora03ldn, .jssora03rdn
+						{
+							position: absolute;
+							cursor: pointer;
+							display: block;
+							background: url(brcm_files/a03.png) no-repeat;
+							overflow:hidden;
+						}
+						.jssora03l { background-position: -3px -33px; }
+						.jssora03r { background-position: -63px -33px; }
+						.jssora03l:hover { background-position: -123px -33px; }
+						.jssora03r:hover { background-position: -183px -33px; }
+						.jssora03ldn { background-position: -243px -33px; }
+						.jssora03rdn { background-position: -303px -33px; }
+					</style>
+					<!-- Arrow Left -->
+					<span u="arrowleft" class="jssora03l" style="width: 55px; height: 55px; top: 123px; left: 8px;">
+					</span>
+					<!-- Arrow Right -->
+					<span u="arrowright" class="jssora03r" style="width: 55px; height: 55px; top: 123px; right: 8px">
+					</span>
+					<!-- Arrow Navigator Skin End -->
 				</div>
 			</div>
 			
