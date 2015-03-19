@@ -11,7 +11,28 @@ body {
 
 a:link, a:visited {color:black}
 a:hover {color:red}
-.navigation li:hover {color:red}
+
+.navigation li, .navigation li img {
+	transition:1.25s ease-in-out;
+	border-radius: 1em;
+	user-select:none;
+}
+
+.navigation li:hover {
+	  color: darkred;
+    box-shadow: inset 0em 0em .1em .1em rgba(125,0,0,0.4);
+	  transition:.25s ease-in-out;
+		background-color:rgba(0,0,0,.1)
+}
+
+.navigation li:hover img {
+		animation:spin-squeeze 2.5s infinite;
+}
+
+@keyframes spin-squeeze {
+	50%  {transform:scaleX(-1) scaleY(.85)}
+	100% {transform:scaleX(1) }
+}
 
 .wrapper {
 	text-align: center;
