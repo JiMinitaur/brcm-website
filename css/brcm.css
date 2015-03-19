@@ -39,7 +39,6 @@ a:hover {color:red}
 	display:inline-block;
 }
 
-
 .logo-brcm {
 	background-color:#111A83;
 	position:relative;
@@ -67,12 +66,15 @@ a:hover {color:red}
 	margin: 0em;
 }       
 
-.logo-brcm .address {
-	top: 3.5em;        
-	color: #FFF;
-}
+
 
 .logo-brcm .catchphrase {
+	top: 3em;
+	color: #FFF;
+	font-size: 1.2em;
+}
+
+.logo-brcm .address {
     bottom: .5em;
     color: #F00;
     font-size: 1.15em;
@@ -117,6 +119,16 @@ a:hover {color:red}
 	padding: .75em;
 }
 
+.owner {
+	font-size:1.1em;
+	margin-top:-.5em;
+
+}
+
+.appointments {
+	font-size:1.1em;
+}
+
 .navigation ul {
 	padding:0em;
 }
@@ -154,6 +166,7 @@ a:hover {color:red}
 
 .about {
 	text-align:center;
+	font-size:1.1em;
 }
 
 .gallery .text {
@@ -172,6 +185,7 @@ a:hover {color:red}
 	position:relative;
 	height:25em;
 	margin:auto;
+	margin-top:1em;
 	overflow-y:scroll;
 }
 
@@ -181,8 +195,10 @@ a:hover {color:red}
 
 .map-text {
 	position:absolute;
-	top:5em;
+	top:2em;
 	left:50%;
+	margin: 0em 1em;
+	font-size:1.2em;
 }
 
 .map-image {
@@ -191,9 +207,7 @@ a:hover {color:red}
     width: 20em;
     right: 50%;
     border-radius: 5px;
-    margin: 2em;
-	margin-right:5em;
-	margin-top:0em;
+    margin: 0em 2em;
 }
 
 .map img {
