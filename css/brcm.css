@@ -30,20 +30,17 @@ a:link, a:visited {color:black}
 a:hover {color:red}
 
 .navigation li, .navigation li img {
-	transition:1.25s ease-in-out;
 	border-radius: 1em;
 	user-select:none;
 }
 
 .navigation li:hover {
-	  color: darkred;
+	  color: rgba(200,0,0,1);
 /*    box-shadow: inset 0em 0em .1em .1em rgba(125,0,0,0.4); */
-	  transition:.25s ease-in-out;
-		
 }
 
 .navigation li:hover img {
-		animation:spin-squeeze 2.5s infinite;
+		/*animation here*/
 }
 
 @keyframes spin-squeeze {
