@@ -23,7 +23,7 @@ define("brcm.navigation",
 	["jquery"],
 	function($) {
 		console.log("brcm.navigation()");
-		$(".navigation ul li").click(function(event) {
+		$(".navigation ul li[data-nav-section]").click(function(event) {
 			event_target = $(event.delegateTarget)
 			var id = event_target.data('nav-section');
 			$(".nav-section").each(function(index, element) {

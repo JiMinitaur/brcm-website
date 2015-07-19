@@ -26,8 +26,8 @@ body:after {
 	background-color:red;
 }
 
-a:link, a:visited {color:black}
-a:hover {color:red}
+a:link, a:visited {text-decoration:none;color:black}
+a:hover {color:inherit}
 
 .navigation li, .navigation li img {
 	border-radius: 1em;
