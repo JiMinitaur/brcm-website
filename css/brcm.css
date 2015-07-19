@@ -220,6 +220,7 @@ a:hover {color:inherit}
 	position:relative;	
 	margin: .5em;
 	max-height:12em;
+	max-width:30%;
 	border-radius:5px;
 }
 
