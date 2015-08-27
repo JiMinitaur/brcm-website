@@ -148,6 +148,12 @@ a:hover {color:inherit}
     transform:scaleX(-1)
 }
 
+.content {
+   max-width:45em;
+   margin-left: auto;
+   margin-right:auto;
+}
+
 .info {
 	margin-top:1em;
 	display:inline-block;
@@ -204,7 +210,8 @@ a:hover {color:inherit}
 
 .scrapyard {
 	border-radius:1em;
-	width:100%;
+	max-width:100%;
+	max-height:20em;
 	margin:1em 0em;
 }
 
