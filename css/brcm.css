@@ -12,7 +12,7 @@
 
 body {
 	font-weight: bold;
-
+  font-family: Times New Roman;
 	background-image: url(../brcm_files/mountains-sample.jpg);
 	background-size: cover;
 	background-repeat:no-repeat;
@@ -63,8 +63,7 @@ a:hover {color:inherit}
 }
 
 .header {
-	min-width:30em;
-	max-width:30em;
+	width:30em;
 	line-height: 1em;
 	margin:0em auto;
 	position:relative;
@@ -89,8 +88,7 @@ a:hover {color:inherit}
 		position: absolute;
 		font-weight: bold;
 		color: rgba(153, 210, 237, 0.9);
-		font-size: 1.1em;
-		font-family: sans-serif;
+		font-family: arial;
 		font-style: italic;
 		width:100%;
 }
