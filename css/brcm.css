@@ -102,15 +102,15 @@ a:hover {color:inherit}
 
 
 .logo-brcm .catchphrase {
-	top: 3em;
+	bottom: .5em;
 	color: #FFF;
 	font-size: 1.2em;
 }
 
 .logo-brcm .address {
-    bottom: .5em;
-    color: #F00;
-    font-size: 1.15em;
+	top: 3em;
+	color: #F00;
+	font-size: 1.2em;
 }
 
 .logo-mustang {
