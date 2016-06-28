@@ -1,3 +1,3 @@
-<%
-php header('Location: brcm.htm'); 
+<?php 
+header('Location: brcm.htm'); 
 ?>
