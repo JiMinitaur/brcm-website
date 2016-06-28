@@ -103,13 +103,13 @@ a:hover {color:inherit}
 
 .logo-brcm .catchphrase {
 	bottom: .5em;
-	color: #FFF;
+	color: #F00;
 	font-size: 1.2em;
 }
 
 .logo-brcm .address {
 	top: 3em;
-	color: #F00;
+	color: #FFF;
 	font-size: 1.2em;
 }
 
