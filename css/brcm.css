@@ -152,24 +152,40 @@ a:hover {color:inherit}
    margin-right:auto;
 }
 
-.info {
+.notify {
 	margin-top:1em;
+	text-align:center;
+}
+
+.notify .left, .notify .right {
 	display:inline-block;
+	width:15em;
+}
+
+.info {
 	font-size:1.1em;
 	font-weight:bold;
 	line-height: 1.1em;
 	position:relative;
 }
 
-.phone {
+.notify .right {
 	right:5em;
 }
 
-.hours {
+.notify .left {
 	left:5em;
 }
 
 .owner {
+}
+
+.ampm {
+	font-size:.75em;
+}
+
+.phone, .email {
+	font-size:1em;
 }
 
 .appointments {
