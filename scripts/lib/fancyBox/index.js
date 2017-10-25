@@ -14,7 +14,8 @@ define("fancybox",
 		var scriptRequest = $.ajax({
 				url : scriptFile,
 				dataType: 'script',
-				async: false
+				async: false,
+				cache: true
 			}).always( function(script, status, data) {
 			console.log("ajax.Script::status::"+status+":"+ scriptFile);
 				if (status != "success")
