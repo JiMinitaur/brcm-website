@@ -1,4 +1,4 @@
-var base = "lib/fancybox/fancyapps-fancyBox-18d1712/source/";
+var base = "lib/fancyBox/fancyapps-fancyBox-18d1712/source/";
 
 var fancyboxModule = base + "jquery.fancybox";
 
